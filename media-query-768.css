@@ -1,0 +1,265 @@
+@media (max-width: 768px) {
+    body{
+        font-size: 11px;
+    }
+
+    .projectS{
+        font-size: 18px;
+    }
+
+    /* navbar */
+    
+    .header{
+        padding: 10px;
+        justify-content: space-around;
+    }
+
+    .navbar a{
+        font-size: 9px;
+
+    }
+
+    .dolpo{
+        font-size: 16px;
+        /* margin-right: 20px; */
+    }
+    /* section 1 home*/
+    .section1border{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 390px;
+    }
+
+    .frontend{
+        font-size: 20px;
+    }
+    
+    .three-body-div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: -20px;
+        margin-left: -10px;
+    }
+
+    .three-body {
+        --uib-size: 12px;
+        --uib-speed: 0.8s;
+    }
+
+    .Randy{
+        font-size: 9px;
+    }
+
+    .meh{
+        width: 100px;
+        height: auto;
+        border-radius: 10px;
+        border: 2px solid #552702;
+    }
+
+    .socMed{
+        margin-top: 1px;
+    }
+    .fa-brands{
+        font-size: 9px;
+    }
+
+    /* section 2 about me */
+    .section2border{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        width: 500px;
+    }
+
+    .text{
+        font-size: 9px;
+    }
+
+    .aboutMeImg{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+
+    .aboutMeh{
+        width: 200px;
+        margin-right: 10px;
+    }
+    
+    /* section 3 projects (wayv) */
+    .section3border{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        width: 300px;
+    }
+
+    .descwayv{
+        /* width: 400px; */
+        font-size: 9px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .fa-solid{
+        font-size: 9px;
+    }
+
+    .button-containerwayv span.button_lg{
+        padding: 8px;
+        font-size: 9px;
+        text-align: center;
+        width: 120px;
+    }
+
+    .button-container2 span.button_lg2{
+        padding: 8px;
+        font-size: 9px;
+        text-align: center;
+        width: 80px;
+    }
+
+    .imgs{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+    }
+
+    .imgwayv{
+        width: 150px;
+    }
+
+    /* section 3 gcc */
+    .section3gccborder{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        width: 300px;
+    }
+
+    .descgcc{
+        width: 400px;
+        margin-left: -3px;
+        font-size: 9px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .buttonsgcc{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .descgcc p{
+        text-align: justify;
+    }
+
+    .imgcontainergcc{
+        margin-bottom: 10px
+    }
+
+    .imgGcc1, .imgGcc2{
+        width: 250px;
+    }
+
+    .buttonsgcc{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .button-containergcc span.button_lg{
+        padding: 8px;
+        font-size: 9px;
+        text-align: center;
+        width: 120px;
+    }
+
+    .button-container2 span.button_lg2{
+        padding: 8px;
+        font-size: 9px;
+        text-align: center;
+        width: 100px;
+    }
+
+    .button-container3 span.button_lg3{
+        padding: 8px;
+        font-size: 9px;
+        text-align: center;
+        width: 100px;
+    }
+
+    /* section 3 regform */
+    .section3regformborder{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        width: 300px;
+    }
+
+    .descregform{
+        width: 400px;
+        font-size: 9px;
+    }
+
+    .descregform p{
+        text-align: center;
+    }
+
+    .imgcontainerregform{
+        margin-bottom: 10px
+    }
+
+    .imgrf1, .imgrf2{
+        width: 250px;
+    }
+
+    .buttonsrf{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .button-containerrf span.button_lg{
+        padding: 8px;
+        font-size: 9px;
+        width: 180px;
+        text-align: center;
+    }
+    
+    .button-container2 span.button_lg2{
+        width: 100px;
+        font-size: 9px;
+        text-align: center;
+    }
+
+    /* contactform */
+    .contactform{
+        width: 350px;
+    }
+    .letsconnect{
+        font-size: 11px;
+    }
+
+    .input{
+        font-size: 11px;
+    }
+
+    button{
+        font-size: 11px;
+    }
+}

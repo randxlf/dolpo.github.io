@@ -1,0 +1,1037 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz@10..48&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Bricolage Grotesque', sans-serif;
+    background-color: beige;
+    overflow: auto;
+    transition: overflow 0.3s ease-in-out;
+}
+
+.projectS{
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 28px;
+    color: #552702;
+    cursor: pointer;
+}
+
+.projectS:hover{
+    color: brown;
+    transition: 0.5s ease-in-out;
+}
+
+/* navbar */
+.header{
+    display: flex;
+    justify-content: space-between;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 8px 100px;
+    align-items: center;
+    z-index: 100;
+    position: fixed;
+    background-color: beige;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.navbar a{
+    text-decoration: none;
+    position: relative;
+    color: #552702;
+    margin-right: 20px;
+    font-size: 15px;
+}
+
+.navbar a::before{
+    content: '';
+    position: absolute;
+    top: 120%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #552702;
+}
+
+.navbar a:hover::before{
+    width: 100%;
+    transition: 0.8s;
+}
+
+.dolpo{
+    color: #552702;
+    font-size: 32px;
+    text-decoration: none;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+.dolpo:hover{
+    color: brown;
+    transition: 0.3s;
+}
+
+/* section1 */
+.section1class{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.section1border{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dolpo{
+    color: #552702;
+    font-size: 32px;
+    text-decoration: none;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+.dolpo:hover{
+    color: brown;
+    transition: 0.3s;
+}
+
+.content{
+    margin-right: 30px;
+}
+
+.loaders{
+    display: flex;
+}
+
+.three-body{
+    margin-left: 20px;
+    margin-top: 15px;
+}
+
+.frontend{
+    font-size: 50px;
+    font-weight: 1000;
+    color: #552702;
+}
+
+.Randy{
+    font-size: 18px;
+    color: #552702;
+}
+
+.fa-brands{
+    font-size: 25px;
+    text-decoration: none;
+    margin-right: 5px;
+}
+
+.socMed{
+    display: flex;
+    margin-top: 20px;
+}
+
+.meh{
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+    border: 2px solid #552702;
+}
+
+.fa-solid{
+    font-size: 35px;
+}
+
+/* section 2 */
+.section2class{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: auto;;
+}
+
+.section2border{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text{
+    color: #552702; 
+}
+
+.aboutMeh{
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    margin-right: 30px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.boutMe{
+    font-weight: bold;
+}
+
+.aboutMeText{
+    font-size: 20px;
+    text-align: justify;
+}
+
+.spin{
+    margin-right: 50px;
+}
+
+.three-body {
+    --uib-size: 35px;
+    --uib-speed: 0.8s;
+    --uib-color: #5D3FD3;
+    position: relative;
+    display: inline-block;
+    height: var(--uib-size);
+    width: var(--uib-size);
+    animation: spin78236 calc(var(--uib-speed) * 2.5) infinite linear;
+}
+
+.three-body__dot {
+    position: absolute;
+    height: 100%;
+    width: 30%;
+}
+
+.three-body__dot:after {
+    content: '';
+    position: absolute;
+    height: 0%;
+    width: 100%;
+    padding-bottom: 100%;
+    background-color: #552702;
+    border-radius: 50%;
+}
+
+.three-body__dot:nth-child(1) {
+    bottom: 5%;
+    left: 0;
+    transform: rotate(60deg);
+    transform-origin: 50% 85%;
+}
+
+.three-body__dot:nth-child(1)::after {
+    bottom: 0;
+    left: 0;
+    animation: wobble1 var(--uib-speed) infinite ease-in-out;
+    animation-delay: calc(var(--uib-speed) * -0.3);
+}
+
+.three-body__dot:nth-child(2) {
+    bottom: 5%;
+    right: 0;
+    transform: rotate(-60deg);
+    transform-origin: 50% 85%;
+}
+
+.three-body__dot:nth-child(2)::after {
+    bottom: 0;
+    left: 0;
+    animation: wobble1 var(--uib-speed) infinite
+       calc(var(--uib-speed) * -0.15) ease-in-out;
+}
+
+.three-body__dot:nth-child(3) {
+    bottom: -5%;
+    left: 0;
+    transform: translateX(116.666%);
+}
+
+.three-body__dot:nth-child(3)::after {
+    top: 0;
+    left: 0;
+    animation: wobble2 var(--uib-speed) infinite ease-in-out;
+}
+
+@keyframes spin78236 {
+    0% {
+    transform: rotate(0deg);
+    }
+
+    100% {
+    transform: rotate(360deg);
+    }
+}
+
+@keyframes wobble1 {
+    0%,
+    100% {
+    transform: translateY(0%) scale(1);
+    opacity: 1;
+    }
+
+    50% {
+    transform: translateY(-66%) scale(0.65);
+    opacity: 0.8;
+    }
+}
+
+@keyframes wobble2 {
+    0%,
+    100% {
+    transform: translateY(0%) scale(1);
+    opacity: 1;
+    }
+
+    50% {
+    transform: translateY(66%) scale(0.65);
+    opacity: 0.8;
+    }
+}
+
+/* section 3 wayv*/
+.section3class{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: auto;
+}
+
+.section3border{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+}
+
+.descandbuttonswayv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.section3class h2{
+    margin-bottom: 10px;
+}
+
+.img4container{
+    margin-right: 10px;
+}
+
+.img4{
+    width: 400px;
+    height: 500px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.img12container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.img12container, .img1, .img2{
+    height: 252px;
+    border-radius: 10px;
+}
+
+/* project desc (wayv) */
+.button-containerwayv { 
+    display: inline-block;
+    margin: 20px;
+    margin-right: -10px;
+}
+
+.descwayv{
+    text-align: center;
+    margin-right: 10px;
+}
+
+.button {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.button_lg {
+    display: inline-block;
+    padding: 10px 20px;
+    color: beige;
+    background-color: #552702;
+    position: relative;
+    overflow: hidden;
+    box-shadow: inset 0px 0px 0px 1px transparent;
+    border-radius: 8px;
+}
+
+.button_sl {
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: -1px;
+    left: -8px;
+    width: 0;
+    background-color: #ff4655;
+    transform: skew(-15deg);
+    transition: all .2s ease;
+}
+
+.button_text {
+    position: relative;
+}
+
+.button:hover .button_sl {
+    width: calc(100% + 15px);
+}
+
+.button:hover .button_lg::after {
+    background-color: #fff;
+}
+
+.fa-solid{
+    font-size: 11px;
+}
+
+/* video demo (wayv) */
+.button-container2 {
+    display: inline-block;
+    margin: 20px;
+    margin-right: -10px
+}
+
+.button2 {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.button_lg2 {
+    display: inline-block;
+    padding: 10px 20px;
+    color: beige;
+    background-color: #552702;
+    position: relative;
+    overflow: hidden;
+    box-shadow: inset 0px 0px 0px 1px transparent;
+    border-radius: 8px;
+}
+
+.button_sl2 {
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: -1px;
+    left: -8px;
+    width: 0;
+    background-color: #ff4655;
+    transform: skew(-15deg);
+    transition: all .2s ease;
+}
+
+.button_text2 {
+    position: relative;
+}
+
+.button2:hover .button_sl2 {
+    width: calc(100% + 15px);
+}
+
+.button2:hover .button_lg2::after {
+    background-color: #fff;
+}
+
+/* thesis popup */
+.section3wayv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: auto;
+}
+
+.imgcontainerwayv{
+    display: flex;
+    flex-direction: column;
+}
+
+.slide3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section3wayv .imgcontainerwayv.imagewayv{
+    width: 200px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.section3wayv .imgcontainerwayv .imagewayv{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: 0.2s linear;
+}
+
+.section3wayv .imgcontainerwayv .imagewayv:hover img{
+    transform: scale(1.1);
+    transition: 0.2s ease-in-out;
+}
+
+.imgs{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.imgwayv{
+    width: 600px;
+    border-radius: 10px;
+    /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); */
+    border: 1px solid #552702;
+    margin-right: 10px;
+}
+
+.imgwayv{
+    width: 400px;
+    border-radius: 10px;
+    border: 1px solid #552702;
+}
+
+/* popup image */
+.section3wayv .popup-imagewayv {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.9);
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+}
+
+.section3wayv .popup-imagewayv span {
+    position: absolute;
+    top: 10px; /* Adjust the top position to give space */
+    right: 10px;
+    font-size: 60px;
+    font-weight: bolder;
+    cursor: pointer;
+    color: beige;
+    z-index: 101; /* Make sure the 'x' button is on top */
+    transition: 0.5s;
+}   
+
+.section3wayv .popup-imagewayv img{
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+    width: 750px;
+}
+
+body.popup-open {
+    overflow: hidden;
+}
+
+/* project 3 gcc */
+.section3gcc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: auto;
+}
+
+.descandbuttonsgcc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.descgcc{
+    text-align: center;
+    margin-left: 10px;
+}
+
+.section3gccborder{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+}
+
+.imgcontainergcc{
+    display: flex;
+    flex-direction: column;
+}
+
+/* .section3gcc .imgcontainergcc .image{
+    border-radius: 10px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    border: 1px solid #552702;
+} */
+
+/* .section3gcc .imgcontainergcc .image{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: 0.2s linear;
+    
+} */
+
+.section3gcc .imgcontainergcc .image:hover img{
+    transform: scale(1.1);
+    transition: 0.2s;
+}
+
+.imgGcc1{
+    width: 600px;
+    border-radius: 10px;
+    /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); */
+    border: 1px solid #552702;
+    margin-bottom: 10px;
+}
+
+.imgGcc2{
+    width: 600px;
+    border-radius: 10px;
+    border: 1px solid #552702;
+}
+
+.button-containergcc { 
+    display: inline-block;
+    margin: 20px;
+    margin-right: -10px;
+}
+
+/* popup image */
+.section3gcc .popup-image {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.9);
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+}
+
+.section3gcc .popup-image span {
+    position: absolute;
+    top: 10px; /* Adjust the top position to give space */
+    right: 10px;
+    font-size: 60px;
+    font-weight: bolder;
+    cursor: pointer;
+    color: beige;
+    z-index: 101; /* Make sure the 'x' button is on top */
+    transition: 0.5s;
+}   
+
+.section3gcc .popup-image img{
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+    width: 750px;
+}
+
+body.popup-open {
+    overflow: hidden;
+}
+
+.slide1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttonsgcc{
+    margin-bottom: -20px;
+}
+
+.button-container3 {
+    display: inline-block;
+    margin: 20px;
+}
+
+.button3 {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.button_lg3 {
+    display: inline-block;
+    padding: 10px 20px;
+    color: beige;
+    background-color: #552702;
+    position: relative;
+    overflow: hidden;
+    box-shadow: inset 0px 0px 0px 1px transparent;
+    border-radius: 8px;
+}
+
+.button_sl3 {
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: -1px;
+    left: -8px;
+    width: 0;
+    background-color: #ff4655;
+    transform: skew(-15deg);
+    transition: all .2s ease;
+}
+
+.button_text3 {
+    position: relative;
+}
+
+.button3:hover .button_sl3 {
+    width: calc(100% + 15px);
+}
+
+.button3:hover .button_lg3::after {
+    background-color: #fff;
+}
+
+/* section 3 regform */
+.section3regform{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: auto;
+}
+
+.descandbuttonsregform{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.descregform{
+    margin-right: 15px;
+    text-align: center;
+}
+
+.imgcontainerregform{
+    display: flex;
+    flex-direction: column;
+}
+
+.section3regformborder{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .section3regform .imgcontainerregform .imagerf{
+    width: 200px;
+    border-radius: 10px;
+
+    margin-bottom: 10px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.section3regform .imgcontainerregform .imagerf{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: 0.2s linear;
+} */
+
+.section3regform .imgcontainerregform .imagerf:hover img{
+    transform: scale(1.1);
+    transition: 0.2s;
+}
+
+.imgrf1{
+    width: 600px;
+    border-radius: 10px;
+    /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); */
+    border: 1px solid #552702;
+    margin-bottom: 10px;
+}
+
+.imgrf2{
+    width: 600px;
+    border-radius: 10px;
+    border: 1px solid #552702;
+}
+
+.button-containerrf { 
+    display: inline-block;
+    margin: 20px;
+    margin-right: -10px;
+}
+
+/* popup image */
+.section3regform .popup-imagerf {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.9);
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+}
+
+.section3regform .popup-imagerf span {
+    position: absolute;
+    top: 10px; /* Adjust the top position to give space */
+    right: 10px;
+    font-size: 60px;
+    font-weight: bolder;
+    cursor: pointer;
+    color: beige;
+    z-index: 101; /* Make sure the 'x' button is on top */
+    transition: 0.5s;
+}   
+
+.section3regform .popup-imagerf img{
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+    width: 750px;
+}
+
+body.popup-open {
+    overflow: hidden;
+}
+
+/* contact */
+.section4contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: auto;
+}
+
+.contactform{
+    display: flex;
+    flex-direction: column;
+    width: 50vh;
+    height: auto;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #552702;
+    color: beige;
+}
+
+.letsconnect{
+    font-size: 20px;
+}
+
+.socials{
+    display: flex;
+    margin-top: 10px;
+}
+
+.sendMe{
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.textBoxes{
+    margin-top: 5px;
+}
+
+.yourName{
+    padding: 5px;
+    background-color: beige;
+    font-family: 'Bricolage Grotesque', sans-serif;
+    border-radius: 5px;
+    text-decoration: none;
+    width: 250px;
+    box-sizing: border-box;
+}
+
+.input-container1, .input-container2, .input-container3{
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.input-container1, .input-container2{
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-container3{
+    display: flex;
+    justify-content: center;
+}
+
+.inputTextarea{
+    width: 500px;
+    height: 100px;
+    font-size: 1em;
+    font-family: 'Bricolage Grotesque', sans-serif;
+    padding: 0.6em 1em;
+    border: none;
+    border-radius: 6px;
+    background-color: beige;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    max-width: 1500px;
+    color: #333;
+}
+
+.inputTextarea:hover {
+    background-color: beige;
+}
+
+.inputTextarea:focus {
+    outline: none;
+    background-color: beige;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.inputTextarea::placeholder {
+    color: #552702;
+}
+
+.input {
+    font-size: 1em;
+    font-family: 'Bricolage Grotesque', sans-serif;
+    padding: 0.6em 1em;
+    border: none;
+    border-radius: 6px;
+    background-color: beige;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    max-width: 220px;
+    color: #333;
+}
+
+.input:hover {
+    background-color: beige;
+}
+
+.input:focus {
+    outline: none;
+    background-color: beige;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.input::placeholder {
+    color: #552702;
+}
+
+/* .highlight {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #6c63ff;
+    transition: width 0.3s ease;
+}
+
+.input:focus + .highlight {
+    width: 22.2%;
+} */
+
+  /* Optional: Animation on focus */
+@keyframes input-focus {
+    from {
+    transform: scale(1);
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0.1);
+    }
+
+    to {
+    transform: scale(1.02);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+}
+
+.input:focus {
+    animation: input-focus 0.3s ease;
+}
+
+/* submit button */
+.submitButton{
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    font-family: inherit;
+    font-size: 18px;
+    background: beige;
+    color: #552702;
+    padding: 0.4em 1.0em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 6px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s;
+}
+
+button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+button:active {
+    transform: scale(0.95);
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+button span {
+    display: block;
+    margin-left: 0.4em;
+    transition: all 0.3s;
+    margin-left: -8px;
+}
+
+button svg {
+    width: 18px;
+    margin-left: -8px;
+    height: 18px;
+    fill: white;
+    transition: all 0.3s;
+}
+
+button .svg-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: beige;
+    margin-right: 0.5em;
+    transition: all 0.3s;
+}
+
+button:hover .svg-wrapper {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+button:hover svg {
+    transform: rotate(45deg);
+}
+
+

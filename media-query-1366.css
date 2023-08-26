@@ -1,0 +1,223 @@
+@media (max-width: 1366px) {
+    body{
+        font-size: 13px;
+    }
+
+    .projectS{
+        font-size: 23px;
+    }
+
+    /* navbar */
+    
+    /* .header{
+        padding: 10px;
+        justify-content: space-around;
+    } */
+
+    .navbar a{
+        font-size: 13px;
+
+    }
+
+    .dolpo{
+        font-size: 18px;
+        /* margin-right: 20px; */
+    }
+    /* section 1 home*/
+    .section1border{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 800px;
+    }
+
+    .frontend{
+        font-size: 25px;
+    }
+    
+    .three-body-div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: -20px;
+        margin-left: -10px;
+    }
+
+    .three-body {
+        --uib-size: 12px;
+        --uib-speed: 0.8s;
+    }
+
+    .Randy{
+        font-size: 16px;
+    }
+
+    .meh{
+        width: 115px;
+        height: auto;
+        border-radius: 10px;
+        border: 2px solid #552702;
+    }
+
+    .socMed{
+        margin-top: 10px;
+    }
+    .fa-brands{
+        font-size: 16px;
+    }
+
+    /* section 2 about me */
+    .section2border{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 800px;
+    }
+
+    .text{
+        font-size: 13px;
+        margin-left: 10px;
+    }
+
+    .aboutMeImg{
+        display: flex;
+        justify-content: center;
+    }
+
+    .aboutMeh{
+        width: 250px;
+        margin-right: 10px;
+    }
+    
+    /* section 3 projects (wayv) */
+    .section3border{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 1000px;
+    }
+
+    .descwayv{
+        width: 400px;
+        font-size: 13px;
+        text-align: center;
+    }
+
+    .fa-solid{
+        font-size: 13px;
+    }
+
+    .button-containerwayv span.button_lg{
+        padding: 8px;
+        font-size: 13px;
+        width: 170px;
+    }
+
+    .button-container2 span.button_lg2{
+        padding: 8px;
+        font-size: 13px;
+        width: 120px;
+    }
+
+    span.button_lg2{
+        padding: 8px;
+        font-size: 13px;
+        width: 130px;
+    }
+
+    .imgs{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+    }
+
+    .imgwayv{
+        width: 300px;
+    }
+
+    /* section 3 gcc */
+    .section3gccborder{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 1000px;
+    }
+
+    /* .descgcc{
+        width: 400px;
+        font-size: 13px;
+        text-align: center;
+    } */
+
+    .imgcontainergcc{
+        margin-bottom: 10px
+    }
+
+    .imgGcc1, .imgGcc2{
+        width: 450px;
+    }
+
+    .button-containergcc span.button_lg{
+        padding: 8px;
+        font-size: 13px;
+        width: 170px;
+    }
+
+    .button-container2 span.button_lg2{
+        width: 140px;
+    }
+
+    .button-container3 span.button_lg3{
+        padding: 8px;
+        width: 140px;
+    }
+
+    /* section 3 regform */
+    .section3regformborder{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 1000px;
+    }
+
+    /* .descregform{
+        width: 400px;
+        font-size: 13px;
+    } */
+
+    /* .imgcontainerregform{
+        margin-bottom: 10px
+    } */
+
+    .imgrf1, .imgrf2{
+        width: 450px;
+    }
+
+    .button-containerrf span.button_lg{
+        padding: 8px;
+        font-size: 13px;
+        width: 270px;
+    }
+    
+    .button-container2 span.button_lg2{
+        width: 140px;
+    }
+
+    /* contactform */
+    .contactform{
+        width: 400px;
+    }
+    .letsconnect{
+        font-size: 13x;
+    }
+
+    .input{
+        font-size: 13px;
+    }
+
+    button{
+        font-size: 13px;
+    }
+}
+
+
